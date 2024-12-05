@@ -9,7 +9,7 @@ This is a report of the Homework 3 of Robotics Lab course using Docker and ROS2 
 
 Open the terminal, open the container and enter into the directory where you want to download the folder, then download it with:
 
-      $ git clone https://github.com/NicoMonetti/Nicola_Monetti_Homework_3.git
+      $ git clone https://github.com/TeoDeSimone/De_Simone_hmw3.git
             
 --------------------------------
 
@@ -54,7 +54,7 @@ After this, open another terminal and use the command:
 
       $ ros2 launch aruco_ros simple_single.launch.py
       
-Open another terminal and use the following command specifying as node arguments task:= pos | lap | merge and cmd_interface:= velocity | effort :
+Open another terminal and use the following command specifying as node arguments task:= pos|lap|merge and cmd_interface:= velocity|effort :
       
-      $ ros2 run ros2_kdl_package ros2_kdl_vision_control --ros-args -p cmd_interface:=velocity -p task:=lap
+      $ ros2 run ros2_kdl_package ros2_kdl_vision_control --ros-args -p cmd_interface:="<cmd_interface>" -p task:="<task>"
       
